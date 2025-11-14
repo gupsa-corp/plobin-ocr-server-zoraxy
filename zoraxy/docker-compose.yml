@@ -11,14 +11,14 @@ services:
     volumes:
       - ./config:/opt/zoraxy/config
       - ./certs:/opt/zoraxy/certs
-      - /var/run/docker.sock:/var/run/docker.sock:ro  # Docker 소켓 접근
+      # Podman은 소켓 마운트가 필요없음
     environment:
       - ZORAXY_CONFIG_PATH=/opt/zoraxy/config
       - ZORAXY_CERT_PATH=/opt/zoraxy/certs
     command: [
       "-port=10001",
       "-noauth=${NO_AUTH:-false}",
-      "-docker",
+      # Podman 사용시 -docker 플래그 제거
       "-webroot=/opt/zoraxy/www",
       "-config=/opt/zoraxy/config",
       "-disable-tls"
