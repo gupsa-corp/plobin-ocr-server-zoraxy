@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "maxSize": "50000",
+  "maxBackups": 16,
+  "compress": true
+}

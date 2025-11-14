@@ -1,0 +1,7 @@
+{
+ "Enabled": true,
+ "Email": "devops@gupsa.com",
+ "RenewAll": true,
+ "FilesToRenew": [],
+ "DNSServers": ""
+}
