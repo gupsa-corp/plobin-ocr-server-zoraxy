@@ -6,6 +6,7 @@ cd zoraxy && docker compose restart
 
 ## 룰
 로컬 개발환경을 구축하여 원활한 테스트환경 구축
+이거 podman 사용하지 말것
 
 ## 관리자 계정 관리방법
 
